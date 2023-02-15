@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Projects</title>
+    <link rel="stylesheet" href="./projects/styles/layout.css" />
+    <link rel="stylesheet" href="./common/styles/navbar.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script
+      src="https://kit.fontawesome.com/a03bef3bb6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="sign">
+        <a href="./">
+          <img class="logo" src="./common/images/logo.png" alt="logo" />
+        </a>
+        <div>
+          <a href="./"><span class="name">Xiaorui Shen</span></a>
+        </div>
+      </div>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check">
+          <i class="material-symbols-outlined" id="btn"> menu </i>
+          <i class="material-symbols-outlined" id="cancel"> close </i>
+        </label>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="#" class="active">Projects</a></li>
+          <li><a href="./hobbies">Hobbies</a></li>
+        </ul>
+      </nav>
+      <a href="./contact"><button>Contact</button></a>
+    </header>
+    <div class="space"></div>
+    <section class="projects">
+      <h2>My Projects</h2>
+      <div class="project-container">
+        <div class="project-item">
+          <a href="https://github.com/ronglixiao">
+            <img src="./projects/images/project1.jpg" alt="Project 1" />
+            <h3>Distributed E-commerce Application</h3>
+            <p>
+              Used Redis as a cache for MySQL to improve data query efficiency;
+              introduced Redis Lua script to solve the problem of overselling
+              inventory during hign concurrency.
+            </p>
+            <p>
+              Implemented search for a large number of items using ElasticSearch
+              with Kibana.
+            </p>
+            <p>
+              Introduced Snowflake Algorithm to generate unique order IDs in a
+              distributed environment, solving the problem of duplicated order
+              IDs and improving ID generation performance.
+            </p>
+            <span><i class="fab fa-github"></i>Click to jump</span>
+          </a>
+        </div>
+        <div class="project-item">
+          <a href="https://github.com/ronglixiao">
+            <img src="./projects/images/project2.jpg" alt="Project 2" />
+            <h3>Serverless Web Note App</h3>
+            <p>
+              Designed and developed a serverlessnote app using React for the
+              frontend and AWS for the backend.
+            </p>
+            <p>
+              Built RESTful APIs using AWS API Gateway and set up on-demand code
+              via AWS Lambda.
+            </p>
+            <p>
+              Implemented data storage using AWS DynamoDB; set up AWS S3 for
+              file uploads.
+            </p>
+            <span><i class="fab fa-github"></i>Click to jump</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
